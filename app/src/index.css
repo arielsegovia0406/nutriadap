@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 18% 6%;
+    --foreground: 150 12% 96%;
+    --card: 222 16% 9%;
+    --card-foreground: 150 12% 96%;
+    --popover: 222 16% 10%;
+    --popover-foreground: 150 12% 96%;
+    --primary: 160 84% 39%;
+    --primary-foreground: 160 90% 6%;
+    --secondary: 220 14% 15%;
+    --secondary-foreground: 150 12% 96%;
+    --muted: 220 14% 14%;
+    --muted-foreground: 220 10% 62%;
+    --accent: 220 14% 16%;
+    --accent-foreground: 150 12% 96%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 16%;
+    --input: 220 13% 18%;
+    --ring: 160 84% 39%;
+    --radius: 0.75rem;
+    --sidebar-background: 222 16% 8%;
+    --sidebar-foreground: 150 12% 96%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 160 90% 6%;
+    --sidebar-accent: 220 14% 15%;
+    --sidebar-accent-foreground: 150 12% 96%;
+    --sidebar-border: 220 13% 16%;
+    --sidebar-ring: 160 84% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "tnum";
+  }
+}
+
+@layer utilities {
+  .text-protein { color: #38bdf8; }
+  .bg-protein { background-color: #38bdf8; }
+  .text-carbs { color: #fbbf24; }
+  .bg-carbs { background-color: #fbbf24; }
+  .text-fat { color: #fb7185; }
+  .bg-fat { background-color: #fb7185; }
+  .scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { background: hsl(220 13% 22%); border-radius: 3px; }
+}
