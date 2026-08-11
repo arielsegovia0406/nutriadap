@@ -1,7 +1,8 @@
 {
-  "name": "my-app",
+  "name": "nutriadap",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Coach nutricional adaptativo con seguimiento de macros, peso, check-ins e IA",
   "type": "module",
   "scripts": {
     "dev": "vite",
